@@ -31,6 +31,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fopenmp")
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -mavx2")
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pg -g") # Profiling with gprof
+set(LINK_FLAGS "${LINK_FLAGS} -pg -g")
 
 #                                                                  https://hjlebbink.github.io/x86doc/
 #                                                                  - look for *.o file
