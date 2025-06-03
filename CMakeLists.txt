@@ -30,6 +30,8 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -Wfatal-errors -Werror=uninitialized 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fopenmp")
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -mavx2")
 
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pg -g") # Profiling with gprof
+
 #                                                                  https://hjlebbink.github.io/x86doc/
 #                                                                  - look for *.o file
 # set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -S") # ASSEMBLY
@@ -43,7 +45,7 @@ set(ALL_LIBRARIES ${LIBRARY_PATH_CORE}/libCORE.a)
 # set(ALL_LIBRARIES ${ALL_LIBRARIES} ${LIBRARY_RANDOMS_LIB}/libRandoms.so)
 
 
-set(CONST_TARGET_NAME "TEMPLATE")
+set(CONST_TARGET_NAME "PERF_CASE_STUDY")
 
 option(BUILD_LIBRARY "Build library instead of library executable" OFF) # default value - could be overwritten by provided FLAG
 

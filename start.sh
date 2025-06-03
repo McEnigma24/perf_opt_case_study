@@ -171,3 +171,7 @@ timer_start
 timer_end
 
 timer_print
+
+
+cd ..
+./profile.sh
